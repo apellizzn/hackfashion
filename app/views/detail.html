@@ -1,0 +1,34 @@
+<div class="center">
+<a href="/#/">
+	<img class="logo" src="/images/logo.png"/>
+</a>
+</div>
+<div class="container">
+	<div class="row menu">
+		<div class="col-sm-4">	
+        <img class="item" style="position: relative; z-index: 100;" ng-click="reset()" ng-src="{{backgorund.url || '/images/woman/default.jpg'}}">
+    </div>
+    <div class="col-sm-4">
+      <div deckgrid class="deckgrid" source="photos">
+		    <div class="photo" data-ng-click="mother.set(card.file)">
+		        <div class="photo-index" data-ng-if="card.showIndex">
+              <p class="balloon-wrapper">
+                <span class="balloon">{{card.$index}}</span>
+              </p>
+          		</div>
+
+		          <div class="photo-wrapper">
+		            <img data-ng-src="{{card.src}}" class="animation-fade" data-imageloaded data-loadedclass="animation-faded">
+		          </div>
+		          <div class="photo-description">
+		            <h3>{{card.title}}</h3>
+		            <p>{{card.author}}</p>
+		          </div>
+		        </div>
+		    </div>
+		  </div>
+    </div>
+    <button class="detailBuy btn btn-default">Buy</button>
+  </div>
+
+</div>
