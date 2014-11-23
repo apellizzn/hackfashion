@@ -26,13 +26,16 @@
           </div>
 		    </div>
 		  </div>
+      <h1>Wich tessue? <select><option>Silk</option><option>Cotton</option><option>Fauks Leather</option></select></h1>
+        <div class="clearfix"></div>
+        <div class="top100">
     </div>
   </div>
 </div>
 </center>
 <div class="col-sm-12 fixedHeight">
 	<div layout class="block fadein fadout" ng-show="texture">
-			<div class="inline"><h1>How long? {{texture.meters}} Meters ({{texture.meters * texture.price}} €)</h1>			<button class="buyBtn btn btn-default">Buy</button></div>
+			<div class="inline"><h1>How long? {{texture.meters}} Meters</h1>			<button class="buyBtn btn btn-default">Buy</button></div>
 	  <div id="slider" flex="10" layout layout-align="center center">
 	  <md-slider md-theme="red"  flex min="0" max="50" step="1" ng-model="texture.meters" aria-label="red" id="red-slider">
 	  </md-slider>
