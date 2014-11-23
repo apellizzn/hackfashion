@@ -5,7 +5,7 @@
  */
 
 body {
-    padding-top: 40px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 10px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
@@ -42,7 +42,10 @@ img{
     cursor: pointer;
 }
 footer {
-    margin: 50px 0;
+    margin-top: 50px; 
+    margin-bottom: 20px;
+    margin-left:0;
+    margin-right:0px; 
 }
 
 .gender{
@@ -51,7 +54,8 @@ footer {
 }
 .logo{
     max-height: 200px;
-    padding: 10px;
+    padding: 20px;
+     margin-bottom: 30px;
 }
 
 .col-sm-4, .col-sm-2{
