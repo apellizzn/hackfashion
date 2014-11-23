@@ -14,7 +14,8 @@ angular
     'ngTouch',
     'akoenig.deckgrid',
     'ngMaterial',
-    'ngAnimate'
+    'ngAnimate',
+    'ngMap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -29,6 +30,10 @@ angular
       .when('/metric', {
         templateUrl: 'views/metric.html',
         controller: 'MetricCtrl'
+      })
+      .when('/tailoring', {
+        templateUrl: 'views/tailoring.html',
+        controller: 'TailoringCtrl'
       })
       .otherwise({
         redirectTo: '/'

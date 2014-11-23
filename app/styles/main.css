@@ -10,11 +10,10 @@
  * @author André König (andre.koenig@posteo.de)
  *
  */
-
+@import url(http://www.markmurray.co/codepen/entypostyle.css);
 body {
     background:rgba(0, 0, 0, .04);
     font-family: 'Open Sans', sans-serif;
-    padding-bottom:50px;
 }
 
 a {
@@ -228,6 +227,7 @@ img {
 .detailBuy{
   margin-top: 10px;
   width: 340px;
+  margin-left: -20px;
 }
 @media screen and (max-width: 1000px) {
     .deckgrid {
@@ -249,7 +249,12 @@ img {
     }
 }
 
-
+ul li{
+  font-size: 15px;
+  padding: 10px;
+  display: inline;
+  list-style: none;
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .deckgrid {
         margin:100px auto;
@@ -306,6 +311,20 @@ a{
 };
 .opt{
   width: 50%
+}
+.social i{
+  border-right: 1px solid #e8e8e8;
+  padding: 1em;
+  margin: 0;
+  text-shadow: 1px 1px 0 white;
+  color: #3a3a3a;
+}
+map{
+  margin-bottom: 100px;
+}
+
+.block{
+  display: block;
 }
 .center{
   text-align: center;
@@ -504,4 +523,47 @@ md-slider {
             transform: scale(0.35); }
   md-slider[disabled] .md-disabled-thumb {
     display: block; }
-
+.row:nth-child(7) {
+  background: #fefefe;
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.row:nth-child(7) i {
+  padding: 1em;
+  margin: 0;
+  color: white;
+  border-bottom: 5px solid #8e8e8e;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.row:nth-child(7) i:hover {
+  -moz-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.12);
+}
+.social i:nth-child(1) {
+  border-left: none;
+}
+.social i:nth-child(5) {
+  border-right: none;
+}
+.social i:nth-child(1):hover {
+  color: #3b5998;
+}
+.social i:nth-child(2):hover {
+  color: #00a0d1;
+}
+.social i:nth-child(3):hover {
+  color: #db4a39;
+}
+.social i:nth-child(4):hover {
+  color: #c8232c;
+}
+.social i:nth-child(5):hover {
+  color: #ea4c89;
+}

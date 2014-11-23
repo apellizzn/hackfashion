@@ -9,7 +9,7 @@
     <div class="col-sm-12">
     	<h1>What texture? {{texture.title}} <span class="author">{{texture.author}}</h1> 
       <h2>Selected by Miroglio or <button type="button" class="btn btn-default">Upload your own</button></h2>
-      <div deckgrid class="deckgrid" source="selected">
+      <div deckgrid class="deckgrid wide" source="selected">
 		    <div class="photo" data-ng-click="mother.set(card)">
 	        <div class="photo-index" data-ng-if="card.showIndex">
             <p class="balloon-wrapper">
@@ -31,9 +31,8 @@
 </div>
 </center>
 <div class="col-sm-12">
-	<div layout class="fadein fadout" ng-show="texture">
+	<div layout class="block fadein fadout" ng-show="texture">
 			<div class="inline"><h1>How long? {{texture.meters}} Meters ({{texture.meters * texture.price}} €)</h1>			<button class="buyBtn btn btn-default">Buy</button></div>
-
 	  <div flex="10" layout layout-align="center center">
 	  <md-slider md-theme="red"  flex min="0" max="50" step="1" ng-model="texture.meters" aria-label="red" id="red-slider">
 	  </md-slider>
