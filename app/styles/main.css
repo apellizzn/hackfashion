@@ -541,6 +541,11 @@ md-slider {
 .right{
   float: right;
 }
+select{
+  background-color: #fff;
+  border: 1px solid;
+  font-size: 30px;
+}
 .row:nth-child(7) i:hover {
   -moz-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.12);
@@ -566,4 +571,7 @@ md-slider {
 }
 .social i:nth-child(5):hover {
   color: #ea4c89;
+}
+.top100{
+  margin-top: 100px;
 }
